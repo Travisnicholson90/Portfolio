@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Travis Nicholson. Professional Portfolio</title>
+</head>
+<body>
+<main class="main-grid">
+    <header class="header">
+        <svg class="blob" id="visual" viewBox="0 0 900 600" width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(458.24645045730995 335.1300043102797)"><path id="blob-1" d="M129.9 -73.7C173.2 0 216.5 75 194.9 115C173.2 155 86.6 160 3.6 157.9C-79.4 155.8 -158.8 146.7 -194.4 98.6C-230.1 50.5 -222 -36.5 -182.3 -108.1C-142.6 -179.7 -71.3 -235.8 -14 -227.8C43.3 -219.7 86.6 -147.3 129.9 -73.7" ></path></g>
+            <g transform="translate(516.0976777859851 339.53156192879374)"><path id="blob-2" d="M147.4 -197C184.6 -144.4 204.1 -91.9 200.8 -45.1C197.5 1.7 171.5 42.9 150.9 95.2C130.3 147.5 115.1 210.9 82.8 219C50.5 227 1.2 179.6 -66.5 163.3C-134.3 147.1 -220.4 162.1 -273.9 129.2C-327.5 96.3 -348.4 15.6 -321.9 -43.3C-295.5 -102.1 -221.7 -139.2 -160.1 -187.5C-98.6 -235.8 -49.3 -295.4 2.9 -298.8C55.1 -302.3 110.1 -249.6 147.4 -197"  style="visibility: hidden"></path>
+                <p class="logo">Tn</p>
+            </g>
+        </svg>
+        <img class="toggle" src="/images/hamburger-svgrepo-com (2).svg" alt="icon-hamburger">
+        <ul class="list">
+            <li class="links">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="links">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="links">
+                <a href="#">Resume</a>
+            </li>
+        </ul>
+    </header>
+
+        <article class="introduction">
+            <card class="intro-container">
+                <h1>Travis Nicholson</h1>
+                <h2>Full Stack developer</h2>
+                <button class="about-button">About Me</button>
+            </card>
+            <card class="card-container">
+                <img class="exit" src="/images/cross-small-svgrepo-com (1).svg" alt="cross-icon">
+                <div class="about-me">
+                    <h1>About Me</h1>
+                    <p>Hi, my name is Travis and I'm a Full Stack developer.
+                        I first began building websites in 2021 when i decided to teach myself HTML, CSS and a sprinkling of javascript to build a website for a friend. Ever since, i have been obsessed with code and immersed in the world of programming.
+                    </p>
+                </div>
+                <div class="languages">
+                    <img src="/images/html-5-svgrepo-com.svg" alt="icon-html">
+                    <img src="/images/css-3-svgrepo-com.svg" alt="icon-css">
+                    <img src="/images/javascript-svgrepo-com.svg" alt="icon-javascript">
+                </div>
+            </card>    
+        </article>
+        
+        <aside class="profile-links">
+            <a href="https://github.com/Travisnicholson90" target="blank">
+                <img src="/images/github-svgrepo-com.svg" alt="icon-github">
+            </a>
+            <a href="https://codepen.io/your-work" target="blank">
+                <img src="/images/codepen-color-svgrepo-com.svg" alt="icon-codepen">
+            </a>
+            <a href="https://www.linkedin.com/in/travis-nicholson-91787484/" target="blank">
+                <img src="images/linkedin-svgrepo-com.svg" alt="icon-linkedin">
+            </a>
+        </aside>
+        <img class="arrow" src="/images/arrow-down-svgrepo-com.svg" alt="icon-arrow">
+        
+    <section id="projects" class="projects-section">
+        <h1 class="section-header">Projects</h1>
+        <article class="projects-container">
+                <card class="projects">
+                    <h2>Tip calculator</h2>
+                    <p>HTML CSS JavaScript</p>               
+                </card>
+                <card class="projects">
+                    <h2>credit card Validation</h2>
+                    <p>HTML CSS JavaScript</p>  
+                </card>
+                <card class="projects">
+                    <h2>Notifications Page</h2>
+                    <p>HTML CSS JavaScript</p>     
+                </card>
+                <card class="projects">
+                    <h2>Social Media Dashboard - Dark Mode</h2> 
+                    <p>HTML CSS JavaScript</p>                 
+                </card>
+                <card class="projects">
+                    <h2>FAQ Accordion</h2>
+                    <p>HTML CSS JavaScript</p>  
+                </card>
+                <card class="projects">
+                    <h2>Weather App</h2>
+                    <p>HTML CSS JavaScript API</p>  
+            </card>       
+        </article>
+    </section>
+    <section id="contact" class="contact">
+        <h1>Say Hi!</h1>
+        <form class="form" action="/" method="post" enctype="text/plain">
+            <label class="label label-name" for="Name">Name</label>
+            <input class="name-input" type="text">
+            <p class="error-name"></p>
+            <label class="label label-email" for="email">Email</label>
+            <input class="email-input" type="text">
+            <p class="error-email"></p>
+            <label class="label" for="message">Message</label>
+            <textarea class="textarea" name="message-text" id="message-text" cols="30" rows="3"></textarea>
+            <p class="form-message"></p>
+            <button type="send" value="send" class="form-button">SUBMIT</button>
+        </form>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+<script src="script.js"></script>
+    
+</body>
+</html>
