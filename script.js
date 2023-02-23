@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
     //email validation regular expression
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
-    // check if error is === true prior to submitting formMessage
+    // check if error is === true prior to submitting form message
     let error = false;
     const name = nameInput.value;
     const email = emailInput.value;
