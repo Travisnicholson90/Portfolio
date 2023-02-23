@@ -13,6 +13,7 @@ const emailError = document.querySelector('.error-email');
 const formMessage = document.querySelector('.form-message')
 
 
+
 // form control
 form.addEventListener('submit', (e) => {
     e.preventDefault()

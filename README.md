@@ -5,7 +5,6 @@ Professional portfolio of Travis Nicholson.
 ## Table of contents
   - [Description](#description)
   - [Overview](#overview)
-  - [Solution](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)

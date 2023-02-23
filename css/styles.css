@@ -9,6 +9,8 @@
     --blob: #152844;
     --green: rgb(102, 255, 219);
     --icon: rgb(156, 175, 201);
+    --White: hsl(0, 0%, 100%);
+    --Pure-cyan: hsl(176, 100%, 44%);
 }
 
 /* * global styles */
