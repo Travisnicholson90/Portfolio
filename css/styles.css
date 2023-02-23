@@ -8,11 +8,12 @@
     --pink: #d094ea;
     --blob: #152844;
     --green: rgb(102, 255, 219);
+    --icon: rgb(156, 175, 201);
 }
 
-/* * defaults */
+/* * global styles */
 p { color: var(--white); font-size: 20px;}
-h1, h2 { color: var(--txt-off-silver);}
+h1, h2, h3 { color: var(--txt-off-silver);}
 
 
 body {
@@ -264,30 +265,48 @@ aside img:hover{
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    width: 200px;
-    height: 120px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: auto;
+    padding: 1rem;
+    max-width: 260px;
+    height: 160px;
     background: rgba(21, 40, 68, 0.75);
     border-radius: 16px;
     box-shadow: 0px 8px 20px rgba(57, 87, 130, 0.75);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(1px);
-    /* border: 1px solid rgba(21, 40, 68, 0.28); */
 }
+
+.projects h2 { grid-column: 1/2; }
+
+.projects p {
+    letter-spacing: 2px;
+    grid-column: 1/3; 
+    grid-row: 2/3;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+}
+
+.project-link {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center; */
+    width: 25px; 
+    margin-right: 1rem; 
+    gap: 1rem;
+}
+.project-link img{width: 25px;}
+.project-link img:hover { width: 27px; }
 
 .projects:hover {
     cursor: pointer;
-    background: rgba(21, 40, 68, 0.75);
-    border-radius: 16px;
-    box-shadow: 0px 15px 50px rgba(73, 104, 148, 0.75);
-    backdrop-filter: blur(15px);
+    box-shadow: 0px 10px 10px rgba(73, 104, 148, 0.75);
 }
 
 /*  * contact section */
-
 .contact {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -297,9 +316,7 @@ aside img:hover{
     justify-content: center;
 }
 
-.contact h1 { 
-    font-size: 3rem;
-}
+.contact h2 { font-size: 3rem; }
 
 .form {
     display: flex;
@@ -325,6 +342,7 @@ aside img:hover{
     border-bottom: 1px solid var(--green);
     outline: none;
 }
+
 .textarea {
     width: 370px;
     padding: .5rem;
@@ -463,13 +481,9 @@ aside img:hover{
         justify-content: space-evenly;
     }
 
-    .projects-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    .projects-container { grid-template-columns: repeat(1, 1fr); }
 
-    .contact {
-        padding-top: 45rem;
-    }
+    .contact { padding-top: 45rem; }
 
     aside {
         position: static;
