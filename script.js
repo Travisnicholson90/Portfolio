@@ -13,6 +13,7 @@ const emailError = document.querySelector('.error-email');
 const formMessage = document.querySelector('.form-message')
 
 
+
 // form control
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -20,7 +21,7 @@ form.addEventListener('submit', (e) => {
     //email validation regular expression
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
-    // check if error is === true prior to submitting formMessage
+    // check if error is === true prior to submitting form message
     let error = false;
     const name = nameInput.value;
     const email = emailInput.value;
@@ -73,6 +74,10 @@ links.forEach(element => {
         navList.classList.toggle('active');
     })        
 });
+
+
+// TODO: blur background when about info container is toggled
+
 
 // Blob animation //
 const tween = KUTE.fromTo(
