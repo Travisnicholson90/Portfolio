@@ -74,6 +74,10 @@ links.forEach(element => {
     })        
 });
 
+
+// TODO: blur background when about info container is toggled
+
+
 // Blob animation //
 const tween = KUTE.fromTo(
     '#blob-1', 
