@@ -58,10 +58,10 @@ btn.addEventListener('click', (e) => {
     console.log(e.target);
     aboutContainer.classList.toggle('active');
 })
-// toggle exit icon to close the about info
-exit.addEventListener('click', (e) => {
-    aboutContainer.classList.toggle('active');
-})
+// // toggle exit icon to close the about info
+// exit.addEventListener('click', (e) => {
+//     aboutContainer.classList.toggle('active');
+// })
 
 // Toggle nav menu at smaller screen sizes
 toggleNav.addEventListener('click', () => {
@@ -80,10 +80,10 @@ links.forEach(element => {
 
 
 // Blob animation //
-const tween = KUTE.fromTo(
-    '#blob-1', 
-    { path: '#blob-1' }, 
-    { path: '#blob-2' },
-    { repeat: 999, duration: 3000, yoyo: true}
-    )
-    .start();
+// const tween = KUTE.fromTo(
+//     '#blob-1', 
+//     { path: '#blob-1' }, 
+//     { path: '#blob-2' },
+//     { repeat: 999, duration: 3000, yoyo: true}
+//     )
+//     .start();
