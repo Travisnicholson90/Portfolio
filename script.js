@@ -14,6 +14,23 @@ const emailError = document.querySelector('.error-email');
 const formMessage = document.querySelector('.form-message')
 const introScreen = document.querySelector('.intro-screen');
 const mainContent = document.querySelector('.main-grid')
+const section = document.querySelectorAll('section')
+
+
+// intersection observer for all sections
+
+const observer = new IntersectionObserver((entries) => {
+    // loop over all entries
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+section.forEach(el => observer.observe(el))
 
 // document.addEventListener('DOMContentLoaded', (e) => {
 //     setTimeout(() => {
