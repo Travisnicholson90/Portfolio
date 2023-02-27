@@ -106,6 +106,7 @@ body {
 }
 
 /* *main content */
+
 .introduction {
     z-index: 1;
     display: flex;
@@ -163,6 +164,7 @@ body {
 
 .about-container.active {
     visibility: visible;
+    animation: fade 1s ease-in forwards;
 }
 
 .exit:hover {
@@ -211,18 +213,6 @@ aside img:hover{
     bottom: 10px;
     right: 50vw;
     animation: arrow 3s infinite;
-}
-
-@keyframes arrow {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
 }
 
 /*  * Projects section */
@@ -427,3 +417,5 @@ aside img:hover{
     .languages img { width: 60px; }
 
 }
+
+
