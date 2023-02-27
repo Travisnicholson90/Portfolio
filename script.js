@@ -11,8 +11,14 @@ const formButton = document.querySelector('.form-button');
 const nameError = document.querySelector('.error-name');
 const emailError = document.querySelector('.error-email');
 const formMessage = document.querySelector('.form-message')
+const introScreen = document.querySelector('.intro-screen');
+const mainContent = document.querySelector('.main-grid')
 
-
+document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(() => {
+        introScreen.classList.toggle('hide');
+    }, 2000);
+})
 
 // form control
 form.addEventListener('submit', (e) => {
