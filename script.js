@@ -1,5 +1,6 @@
 const btn = document.querySelector('.about-button');
-const aboutContainer = document.querySelector('.card-container');
+const aboutMe = document.querySelector('.about-container');
+const introSection = document.querySelector('.introduction')
 const exit = document.querySelector('.exit');
 const toggleNav = document.querySelector('.toggle');
 const navList = document.querySelector('.list');
@@ -14,11 +15,11 @@ const formMessage = document.querySelector('.form-message')
 const introScreen = document.querySelector('.intro-screen');
 const mainContent = document.querySelector('.main-grid')
 
-document.addEventListener('DOMContentLoaded', (e) => {
-    setTimeout(() => {
-        introScreen.classList.toggle('hide');
-    }, 2000);
-})
+// document.addEventListener('DOMContentLoaded', (e) => {
+//     setTimeout(() => {
+//         introScreen.classList.toggle('hide');
+//     }, 2000);
+// })
 
 // form control
 form.addEventListener('submit', (e) => {
@@ -61,13 +62,14 @@ form.addEventListener('submit', (e) => {
 
 //toggle btn to show about info
 btn.addEventListener('click', (e) => {
-    console.log(e.target);
-    aboutContainer.classList.toggle('active');
+    aboutMe.classList.toggle('active');
+    introSection.classList.toggle('blur');
 })
-// // toggle exit icon to close the about info
-// exit.addEventListener('click', (e) => {
-//     aboutContainer.classList.toggle('active');
-// })
+
+exit.addEventListener('click', () => {
+    aboutMe.classList.toggle('active');
+    introSection.classList.toggle('blur');
+})
 
 // Toggle nav menu at smaller screen sizes
 toggleNav.addEventListener('click', () => {
